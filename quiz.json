@@ -1,0 +1,59 @@
+{
+  "questions": [
+    {
+      "question": "2021 - Consider Alice and Bob had an exchange of messages using an instant chat messenger. Those messages were quite damaging for Alice, so she filed a court case. However, Bob gave a statement that he did not send any of those messages. Imagine you are a case investigator who has to provide an opinion solely based on the security mechanism used by the messager. Which one of the following security mechanisms can guarantee that Bob sent those messages?",
+      "options": [
+        "Symmetric encryption",
+        "HMAC",
+        "Digital signature",
+        "MAC",
+        "Hash"
+      ],
+      "answer": "Digital signature"
+    },
+    {
+      "question": "2021 - Q2 - When a secure channel is used for achieving confidentiality, an eavesdropper CANNOT easily learn ___?",
+      "options": [
+        "Destination address",
+        "Communication time",
+        "Length of a message",
+        "Frequency of messages",
+        "Message contents"
+      ],
+      "answer": "Message contents"
+    },
+    {
+      "question": "2021 - Q3 - Which statement is FALSE about GDPR consent?",
+      "options": [
+        "Consent is understandable",
+        "Consent is in plain language",
+        "Consent is an easily accessible form",
+        "Consent cannot be withdrawn",
+        "Consent is clear"
+      ],
+      "answer": "Consent cannot be withdrawn"
+    },
+    {
+      "question": "2021 - Q4 - What is FALSE about GDPR\u2019s data breach notification?",
+      "options": [
+        "Companies holding the data of EU citizens are responsible for data breach notifications",
+        "A data processor is required to notify customers about data breaches",
+        "All of the given options",
+        "A data controller is required to notify customers about data breaches",
+        "Companies must notify customers within 72 hours no matter a data breach has been identified or not"
+      ],
+      "answer": "Companies must notify customers within 72 hours no matter a data breach has been identified or not"
+    },
+    {
+      "question": "2021 - Q5 - Recall that a mode of operation is used for encrypting large messages. Which of the following modes of operation can enable parallelism in both encrypting and decrypting data?",
+      "options": [
+        "Both CBC and CTR",
+        "None of ECB, CBC, and CTR",
+        "Both ECB and CTR",
+        "Both ECB and CBC",
+        "All of ECB, CBC, and CTR"
+      ],
+      "answer": "Both ECB and CTR"
+    }
+  ]
+}
