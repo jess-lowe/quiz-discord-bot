@@ -22,11 +22,16 @@ with open('quiz.json', 'r') as file:
 file.close()
 
 # Called once bot is ready for further action.
+@bot.event
+async def on_ready():
+    print(f'Logged in as {bot.user}')
+    await bot.tree.sync()
+
 @bot.command()
 @commands.is_owner()
 async def sync(ctx):
     await ctx.bot.tree.sync()
-    # await ctx.bot.tree.sync(guild=ctx.guild)
+    await ctx.send("Synced")
 
 class CurrentQuestion():
     def __init__(self):
@@ -57,28 +62,28 @@ class Buttons(discord.ui.View):
         self.stop()
         await interaction.response.edit_message(view=self)
     @discord.ui.button(label='1', style=discord.ButtonStyle.blurple)
-    async def one(self, button: discord.ui.Button, interaction: discord.Interaction):
+    async def one(self, interaction: discord.Interaction, button: discord.ui.Button):
         await self.handle_confirmation(interaction, 0, button)            
        
     @discord.ui.button(label='2', style=discord.ButtonStyle.blurple)
-    async def two(self, button: discord.ui.Button, interaction: discord.Interaction):
+    async def two(self, interaction: discord.Interaction, button: discord.ui.Button):
         await self.handle_confirmation(interaction, 1, button)
      
     @discord.ui.button(label='3', style=discord.ButtonStyle.blurple)
-    async def three(self, button: discord.ui.Button, interaction: discord.Interaction):
+    async def three(self, interaction: discord.Interaction, button: discord.ui.Button):
         await self.handle_confirmation(interaction, 2, button)
            
     @discord.ui.button(label='4', style=discord.ButtonStyle.blurple)
-    async def four(self, button: discord.ui.Button, interaction: discord.Interaction):
+    async def four(self, interaction: discord.Interaction, button: discord.ui.Button):
         await self.handle_confirmation(interaction, 3, button)
            
     @discord.ui.button(label='5', style=discord.ButtonStyle.blurple)
-    async def five(self, button: discord.ui.Button, interaction: discord.Interaction):
+    async def five(self, interaction: discord.Interaction, button: discord.ui.Button):
         await self.handle_confirmation(interaction, 4, button)
     
 curr_question = CurrentQuestion()
 
-@app_commands.command(name="question")
+@bot.tree.command(name="question")
 async def question(interaction: discord.Interaction):
     """Gives a question"""
     curr_question.new_question()
