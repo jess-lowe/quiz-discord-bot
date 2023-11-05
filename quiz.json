@@ -54,6 +54,41 @@
         "All of ECB, CBC, and CTR"
       ],
       "answer": "Both ECB and CTR"
+    },
+
+     {
+      "question": "2019 - Q6 - Which one of the following statements is about the General Data Protection Regulation (GDPR) TRUE?",
+      "options": [
+        "GDPR requires that the inclusion of data protection should be from the early stages\nof the system design, rather than an addition.",
+        "GDRP applies to data controllers, but not to data processors.",
+        "Data controllers and data processors can only collect and process anonymous and de-identified data.",
+        "A data controller can collect, store, and process any data, i.e., GDPR follows the data maximisation principle."
+      ],
+      "answer": "GDPR requires that the inclusion of data protection should be from the early stages\nof the system design, rather than an addition."
+    },
+
+    {
+      "question": "2019 - Q7 - Recall the predecessor attack in TOR. Consider that there are N total relays and M of them are controlled by an attacker, then the likelihood that an attacker can control the first and last relays of a TOR circuit will be:",
+      "options": [
+        "0",
+        "(M*M)/(N*N)",
+        "1/(N*M)",
+        "1/M",
+        "N/M"
+      ],
+      "answer": "(M*M)/(N*N)"
+    },
+
+    {
+      "question": "2019 - Q9 - Which one of the following is NOT protected by code obfuscation?",
+      "options": [
+        "Password matching",
+        "Program constants",
+        "Licence check",
+        "Business logic",
+        "Output of a program"
+      ],
+      "answer": "Output of a program"
     }
   ]
 }
