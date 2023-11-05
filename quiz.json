@@ -89,6 +89,258 @@
         "Output of a program"
       ],
       "answer": "Output of a program"
+    },
+
+    {
+      "question": "2019 - Q10 - Which one of the following statements about program analysis is FALSE?",
+      "options": [
+        "Dynamic analysis can capture actual behaviour, but there might be too many\nvalues to consider.",
+        "Concolic execution combines static analysis followed by dynamic analysis.",
+        "Static analysis tools test programs on input values.",
+        "Complex programs can be analysed effectively using concolic execution.",
+        "Static analysis returns path conditions, but there is no information about actual behaviour."
+      ],
+      "answer": "Static analysis tools test programs on input values."
+    },
+
+    {
+      "question": "2019 - Q14 - Suppose you are sending an email to your bank. Which of the following statements is FALSE?: \n\n X. If an unauthorised person reads your message, this is a Data Confidentiality issue. \n\n Y. If an unauthorised person modifies the content of your message, this is a Data\nIntegrity issue.\n\n Z. If an unauthorised person ensures that your message is not delivered, this is a\nDenial of Service issue. ",
+      "options": [
+        "X and Y only",
+        "X and Z only",
+        "Y and Z only",
+        "All of X, Y, and Z",
+        "None, or only one of X, Y, and Z"
+      ],
+      "answer": "None, or only one of X, Y, and Z"
+    },
+
+    {
+      "question": "2019 - Q15 - Which of the following statements is TRUE?: \n X. Wifi security is an application layer vulnerability.\n\n Y. IP address spoofing is a network layer vulnerability. \n\n Z. Theft of a network router is a physical layer vulnerability",
+      "options": [
+        "X only",
+        "Y only",
+        "Z only",
+        "None of X, Y, and Z",
+        "All, or two of X,Y,and Z"
+      ],
+      "answer": "All, or two of X,Y,and Z"
+    },
+
+    {
+      "question": "2019 - Q47 - Suppose a system uses a buffer of 1100 bytes to store TCP connections, Assume that each incomplete TCP connection request needs five bytes of buffer. Also, an incomplete connection request is timed out after 10 seconds. If the rate of sending TCP connections is constant, how many minimum incomplete TCP connection requests per second must be sent to the system to fill system's buffer?",
+      "options": [
+        "24",
+        "25",
+        "28",
+        "23",
+        "27"
+      ],
+      "answer": "23"
+    },
+
+    {
+      "question": "2019 - Q48 - Which of the following security services is affected by a Denial of Service (DoS) attack? A. Confidentiality.",
+      "options": [
+        "Integrity",
+        "Non-repudiation.",
+        "Availability.",
+        "Authentication.",
+        "Confidentiality."
+      ],
+      "answer": "Confidentiality."
+    },
+
+    {
+      "question": "2019 - Q49 - Which of the following is TRUE?\n X. A Public Blockchain is a permissionless blockchain, and a Private Blockchain is a permissioned blockchain.\n\n Y. Bitcoin is based on blockchain.\n\n Z. Blockchain is based on a peer-to-peer network. ",
+      "options": [
+        "X and Y only",
+        "X and Z only",
+        "Y and Z only",
+        "All of X, Y, and Z",
+        "None, or only one of X, Y, and Z"
+      ],
+      "answer": "All of X, Y, and Z"
+    },
+
+    {
+      "question": "Which of the following is TRUE?.\n X. In an intrusion detection system, an Analyser is responsible for providing proof of intrusion.\n\n Y. In Heuristic-based intrusion detection system, the behaviour of an intruder is defined from a set of known attack rules.\n\n Z. In an intrusion detection system, a Proof Reader is responsible for providing proof of the intrusion. ",
+      "options": [
+        "X and Y only",
+        "X and Z only",
+        "Y and Z only",
+        "All of X, Y, and Z",
+        "None, or only one of X, Y, and Z"
+      ],
+      "answer": "X and Y only"
+    },
+
+    {
+      "question": "Slides - What is the purpose of a risk mitigation plan?",
+      "options": [
+        "to bolster a risk assessment",
+        "to implement approved countermeasures",
+        "to reduce threats",
+        "to ensure compliance",
+        "none of the given options"
+      ],
+      "answer": "to implement approved countermeasures"
+    },
+
+    {
+      "question": "Slides - The CIA triad of information security includes:",
+      "options": [
+        "Correctness, Information, and Assurance",
+        "Confidentiality, Integrity, and Authentication",
+        "Confidentiality,Integrity,andAuthorisation",
+        "Confidentiality, Integrity, and Availability",
+        "Correctness, Information, and Authorisation"
+      ],
+      "answer": "Confidentiality, Integrity, and Availability"
+    },
+
+    {
+      "question": "Slides - GDPR applies to:",
+      "options": [
+        "Data controllers only",
+        "Data processors only",
+        "Data controllers and data processors",
+        "None of the above",
+        "Service only"
+      ],
+      "answer": "Data controllers and data processors"
+    },
+
+    {
+      "question": "Slides - Which one of the following is the best choice for protecting passwords?\n",
+      "options": [
+        "Educate users",
+        "Do not allow simple password policy\n",
+        "Use multi-factor authentication",
+        "Prevent common password breach attacks",
+        "All of the above"
+      ],
+      "answer": "All of the above"
+    },
+
+    {
+      "question": "Slides - Which one of the following statements is TRUE?\n",
+      "options": [
+        "Access Control Lists (ACLs) cannot be derived from an access control matrix",
+        "Capability list cannot be derived from an access control matrix",
+        "Both ACLs and capability lists can be derived from an access control matrix",
+        "ACLs are the same as capability lists just different names",
+        "None of the above"
+      ],
+      "answer": "Both ACLs and capability lists can be derived from an access control matrix"
+    },
+
+    {
+      "question": "Slides - Which one is TRUE about zero-day?\n",
+      "options": [
+        "A flaw that is discovered and have a patch",
+        "A flaw that is discovered but does not have a patch",
+        "A flaw that is undiscovered but have a patch\n",
+        "A flaw that is undiscovered and does not have a patch",
+        "None of the above"
+      ],
+      "answer": "A flaw that is discovered but does not have a patch"
+    },
+
+    {
+      "question": "Slides - How can we make secure systems more usable?\n",
+      "options": [
+        "Make it “just work” (an invisible security approach)",
+        "Make security and privacy understandable through visibility, intuitive design, and metaphors\n",
+        "Train the user",
+        "Ensure that only experienced users can use and understand the system",
+        "All of the above"
+      ],
+      "answer": "Make security and privacy understandable through visibility, intuitive design, and metaphors\n"
+    },
+
+    {
+      "question": "Slides - Which category includes XSS in OWASP Top 10 2021?",
+      "options": [
+        "Broken Access Control",
+        "Insecure Design",
+        "Software and Data Integrity Failure",
+        "Injection",
+        "None of the above"
+      ],
+      "answer": "Injection"
+    },
+
+    {
+      "question": "Slides - Which one of the following best describes Concolic Execution?\n",
+      "options": [
+        "It is static analysis",
+        "It is dynamic analysis",
+        "Static analysis followed by dynamic analysis",
+        "Dynamic analysis followed by static analysis",
+        "None of the above"
+      ],
+      "answer": "Static analysis followed by dynamic analysis"
+    },
+
+    {
+      "question": "Slides - What is the privacy paradox?\n",
+      "options": [
+        "Studying privacy preferences requires people to disclose their preferences, and people do not wish to disclose their preferences\n",
+        "People only want privacy after a privacy harm as occurred",
+        "People want to enjoy the benefits of personalization but do not want to give up information for that personalization",
+        "People only care about privacy when the system is secure",
+        "None of the above"
+      ],
+      "answer": "None of the above"
+    },
+
+    {
+      "question": "Slides - A/An _________ is the likelihood that a loss will occur.",
+      "options": [
+        "threat",
+        "risk",
+        "vulnerability",
+        "assessment",
+        "exploit"
+      ],
+      "answer": "risk"
+    },
+
+    {
+      "question": "Which of the following statements about Cyber Security Risks Management is TRUE?",
+      "options": [
+        "Exploited vulnerabilities result in losses.",
+        "All vulnerabilities result in losses.",
+        "Vulnerability is a synonym for loss.",
+        "The method used to take advantage of a vulnerability is known as a threat.",
+        "None of the given options."
+      ],
+      "answer": "Exploited vulnerabilities result in losses."
+    },
+
+    {
+      "question": "When should you perform a risk assessment?",
+      "options": [
+        "when mitigating a threat",
+        "when eliminating a threat",
+        "periodically",
+        "continuously",
+        "at the end"
+      ],
+      "answer": "periodically"
+    },
+
+    {
+      "question": "Why should the people on the RA team be different from the people responsible for correcting deficiencies?",
+      "options": [
+        "to avoid potential losses",
+        "to increase profitability",
+        "to avoid conflicts of interest",
+        "to increase survivability",
+        "to look at the organisation from different angle"
+      ],
+      "answer": "to avoid conflicts of interest"
     }
   ]
 }
