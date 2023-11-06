@@ -1,19 +1,19 @@
 import json
 import os
 from dotenv import load_dotenv
-import nextcord
-from nextcord.ext import commands
+import discord
+from discord import app_commands
+from discord.ext import commands
 import random
-# importing the other python files
 
 load_dotenv()
 BOT_TOKEN = os.getenv('DISCORD_TOKEN')
 GUILD_ID = int(os.getenv('GUILD_ID'))
 
-intents = nextcord.Intents.default()
+intents = discord.Intents.default()
 intents.message_content = True
 
-bot = commands.Bot(intents=intents)
+bot = commands.Bot(intents=intents, command_prefix='!')
 QUIZFILENAME = "quiz.json"
 
 with open('quiz.json', 'r') as file:
@@ -25,6 +25,13 @@ file.close()
 @bot.event
 async def on_ready():
     print(f'Logged in as {bot.user}')
+    await bot.tree.sync()
+
+@bot.command()
+@commands.is_owner()
+async def sync(ctx):
+    await ctx.bot.tree.sync()
+    await ctx.send("Synced")
 
 class CurrentQuestion():
     def __init__(self):
@@ -37,7 +44,7 @@ class CurrentQuestion():
         self.options = self.current_question["options"] 
         self.current_question_index = self.options.index(self.current_question["answer"])
 
-class Buttons(nextcord.ui.View):
+class Buttons(discord.ui.View):
     def __init__(self):
          super().__init__()
          self.value = None
@@ -46,50 +53,49 @@ class Buttons(nextcord.ui.View):
         for child in self.children:
             child.disabled = True
     
-    async def handle_confirmation(self, interaction: nextcord.Interaction, value: int, button: nextcord.ui.Button):
+    async def handle_confirmation(self, interaction: discord.Interaction, value: int, button: discord.ui.Button):
         self.disable_all_buttons()
         if curr_question.current_question_index == value:
-          button.style = nextcord.ButtonStyle.green
+          button.style = discord.ButtonStyle.green
         else:
-          button.style = nextcord.ButtonStyle.red
+          button.style = discord.ButtonStyle.red
         self.stop()
         await interaction.response.edit_message(view=self)
-    @nextcord.ui.button(label='1', style=nextcord.ButtonStyle.blurple)
-    async def one(self, button: nextcord.ui.Button, interaction: nextcord.Interaction):
+    @discord.ui.button(label='1', style=discord.ButtonStyle.blurple)
+    async def one(self, interaction: discord.Interaction, button: discord.ui.Button):
         await self.handle_confirmation(interaction, 0, button)            
        
-    @nextcord.ui.button(label='2', style=nextcord.ButtonStyle.blurple)
-    async def two(self, button: nextcord.ui.Button, interaction: nextcord.Interaction):
+    @discord.ui.button(label='2', style=discord.ButtonStyle.blurple)
+    async def two(self, interaction: discord.Interaction, button: discord.ui.Button):
         await self.handle_confirmation(interaction, 1, button)
      
-    @nextcord.ui.button(label='3', style=nextcord.ButtonStyle.blurple)
-    async def three(self, button: nextcord.ui.Button, interaction: nextcord.Interaction):
+    @discord.ui.button(label='3', style=discord.ButtonStyle.blurple)
+    async def three(self, interaction: discord.Interaction, button: discord.ui.Button):
         await self.handle_confirmation(interaction, 2, button)
            
-    @nextcord.ui.button(label='4', style=nextcord.ButtonStyle.blurple)
-    async def four(self, button: nextcord.ui.Button, interaction: nextcord.Interaction):
+    @discord.ui.button(label='4', style=discord.ButtonStyle.blurple)
+    async def four(self, interaction: discord.Interaction, button: discord.ui.Button):
         await self.handle_confirmation(interaction, 3, button)
            
-    @nextcord.ui.button(label='5', style=nextcord.ButtonStyle.blurple)
-    async def five(self, button: nextcord.ui.Button, interaction: nextcord.Interaction):
+    @discord.ui.button(label='5', style=discord.ButtonStyle.blurple)
+    async def five(self, interaction: discord.Interaction, button: discord.ui.Button):
         await self.handle_confirmation(interaction, 4, button)
     
 curr_question = CurrentQuestion()
 
-@bot.slash_command(guild_ids=[GUILD_ID], name="question", description="gives a question")
-async def question( interaction: nextcord.Interaction):
+@bot.tree.command(name="question")
+async def question(interaction: discord.Interaction):
+    """Gives a question"""
     curr_question.new_question()
-    embed = nextcord.Embed(
+    embed = discord.Embed(
         title= 'Quiz Question', 
         description=curr_question.current_question["question"])
         
     for i,c in enumerate(curr_question.options):
-        n = i+1
-        embed.add_field(name=f'{n}: {curr_question.options[i]}', value="", inline=False)
+        embed.add_field(name=f'{i+1}: {curr_question.options[i]}', value="", inline=False)
 
     view = Buttons()
     await interaction.response.send_message(embed=embed, view=view )
 
 
 bot.run(BOT_TOKEN)
-
