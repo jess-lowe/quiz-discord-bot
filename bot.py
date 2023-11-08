@@ -2,13 +2,11 @@ import json
 import os
 from dotenv import load_dotenv
 import discord
-from discord import app_commands
 from discord.ext import commands
 import random
 
 load_dotenv()
 BOT_TOKEN = os.getenv('DISCORD_TOKEN')
-GUILD_ID = int(os.getenv('GUILD_ID'))
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -16,9 +14,10 @@ intents.message_content = True
 bot = commands.Bot(intents=intents, command_prefix='!')
 QUIZFILENAME = "quiz.json"
 
-with open('quiz.json', 'r') as file:
+with open('quiz.json', 'r', errors='ignore') as file:
     quiz_data = json.load(file)
     questions = quiz_data["questions"]
+
 file.close()
 
 # Called once bot is ready for further action.
@@ -45,9 +44,10 @@ class CurrentQuestion():
         self.current_question_index = self.options.index(self.current_question["answer"])
 
 class Buttons(discord.ui.View):
-    def __init__(self):
+    def __init__(self,embed):
          super().__init__()
          self.value = None
+         self.embed = embed
 
     def disable_all_buttons(self):
         for child in self.children:
@@ -59,8 +59,10 @@ class Buttons(discord.ui.View):
           button.style = discord.ButtonStyle.green
         else:
           button.style = discord.ButtonStyle.red
+        
         self.stop()
-        await interaction.response.edit_message(view=self)
+        self.embed.add_field(name=f'Correct answer: {curr_question.current_question["answer"]}', value="", inline=False)
+        await interaction.response.edit_message(view=self,embed=self.embed)
     @discord.ui.button(label='1', style=discord.ButtonStyle.blurple)
     async def one(self, interaction: discord.Interaction, button: discord.ui.Button):
         await self.handle_confirmation(interaction, 0, button)            
@@ -94,8 +96,6 @@ async def question(interaction: discord.Interaction):
     for i,c in enumerate(curr_question.options):
         embed.add_field(name=f'{i+1}: {curr_question.options[i]}', value="", inline=False)
 
-    view = Buttons()
+    view = Buttons(embed=embed)
     await interaction.response.send_message(embed=embed, view=view )
-
-
 bot.run(BOT_TOKEN)

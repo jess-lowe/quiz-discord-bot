@@ -55,8 +55,7 @@
       ],
       "answer": "Both ECB and CTR"
     },
-
-     {
+    {
       "question": "2019 - Q6 - Which one of the following statements is about the General Data Protection Regulation (GDPR) TRUE?",
       "options": [
         "GDPR requires that the inclusion of data protection should be from the early stages\nof the system design, rather than an addition.",
@@ -66,7 +65,6 @@
       ],
       "answer": "GDPR requires that the inclusion of data protection should be from the early stages\nof the system design, rather than an addition."
     },
-
     {
       "question": "2019 - Q7 - Recall the predecessor attack in TOR. Consider that there are N total relays and M of them are controlled by an attacker, then the likelihood that an attacker can control the first and last relays of a TOR circuit will be:",
       "options": [
@@ -78,7 +76,6 @@
       ],
       "answer": "(M*M)/(N*N)"
     },
-
     {
       "question": "2019 - Q9 - Which one of the following is NOT protected by code obfuscation?",
       "options": [
@@ -90,7 +87,6 @@
       ],
       "answer": "Output of a program"
     },
-
     {
       "question": "2019 - Q10 - Which one of the following statements about program analysis is FALSE?",
       "options": [
@@ -102,7 +98,6 @@
       ],
       "answer": "Static analysis tools test programs on input values."
     },
-
     {
       "question": "2019 - Q14 - Suppose you are sending an email to your bank. Which of the following statements is FALSE?: \n\n X. If an unauthorised person reads your message, this is a Data Confidentiality issue. \n\n Y. If an unauthorised person modifies the content of your message, this is a Data\nIntegrity issue.\n\n Z. If an unauthorised person ensures that your message is not delivered, this is a\nDenial of Service issue. ",
       "options": [
@@ -114,7 +109,6 @@
       ],
       "answer": "None, or only one of X, Y, and Z"
     },
-
     {
       "question": "2019 - Q15 - Which of the following statements is TRUE?: \n X. Wifi security is an application layer vulnerability.\n\n Y. IP address spoofing is a network layer vulnerability. \n\n Z. Theft of a network router is a physical layer vulnerability",
       "options": [
@@ -126,7 +120,6 @@
       ],
       "answer": "All, or two of X,Y,and Z"
     },
-
     {
       "question": "2019 - Q47 - Suppose a system uses a buffer of 1100 bytes to store TCP connections, Assume that each incomplete TCP connection request needs five bytes of buffer. Also, an incomplete connection request is timed out after 10 seconds. If the rate of sending TCP connections is constant, how many minimum incomplete TCP connection requests per second must be sent to the system to fill system's buffer?",
       "options": [
@@ -138,9 +131,8 @@
       ],
       "answer": "23"
     },
-
     {
-      "question": "2019 - Q48 - Which of the following security services is affected by a Denial of Service (DoS) attack? A. Confidentiality.",
+      "question": "2019 - Q48 - Which of the following security services is affected by a Denial of Service (DoS) attack?",
       "options": [
         "Integrity",
         "Non-repudiation.",
@@ -150,7 +142,6 @@
       ],
       "answer": "Confidentiality."
     },
-
     {
       "question": "2019 - Q49 - Which of the following is TRUE?\n X. A Public Blockchain is a permissionless blockchain, and a Private Blockchain is a permissioned blockchain.\n\n Y. Bitcoin is based on blockchain.\n\n Z. Blockchain is based on a peer-to-peer network. ",
       "options": [
@@ -162,7 +153,6 @@
       ],
       "answer": "All of X, Y, and Z"
     },
-
     {
       "question": "Which of the following is TRUE?.\n X. In an intrusion detection system, an Analyser is responsible for providing proof of intrusion.\n\n Y. In Heuristic-based intrusion detection system, the behaviour of an intruder is defined from a set of known attack rules.\n\n Z. In an intrusion detection system, a Proof Reader is responsible for providing proof of the intrusion. ",
       "options": [
@@ -174,7 +164,6 @@
       ],
       "answer": "X and Y only"
     },
-
     {
       "question": "Slides - What is the purpose of a risk mitigation plan?",
       "options": [
@@ -186,7 +175,6 @@
       ],
       "answer": "to implement approved countermeasures"
     },
-
     {
       "question": "Slides - The CIA triad of information security includes:",
       "options": [
@@ -198,7 +186,6 @@
       ],
       "answer": "Confidentiality, Integrity, and Availability"
     },
-
     {
       "question": "Slides - GDPR applies to:",
       "options": [
@@ -210,7 +197,6 @@
       ],
       "answer": "Data controllers and data processors"
     },
-
     {
       "question": "Slides - Which one of the following is the best choice for protecting passwords?\n",
       "options": [
@@ -222,7 +208,6 @@
       ],
       "answer": "All of the above"
     },
-
     {
       "question": "Slides - Which one of the following statements is TRUE?\n",
       "options": [
@@ -234,7 +219,6 @@
       ],
       "answer": "Both ACLs and capability lists can be derived from an access control matrix"
     },
-
     {
       "question": "Slides - Which one is TRUE about zero-day?\n",
       "options": [
@@ -246,11 +230,10 @@
       ],
       "answer": "A flaw that is discovered but does not have a patch"
     },
-
     {
       "question": "Slides - How can we make secure systems more usable?\n",
       "options": [
-        "Make it “just work” (an invisible security approach)",
+        "Make it \"just work\" (an invisible security approach)",
         "Make security and privacy understandable through visibility, intuitive design, and metaphors\n",
         "Train the user",
         "Ensure that only experienced users can use and understand the system",
@@ -258,7 +241,6 @@
       ],
       "answer": "Make security and privacy understandable through visibility, intuitive design, and metaphors\n"
     },
-
     {
       "question": "Slides - Which category includes XSS in OWASP Top 10 2021?",
       "options": [
@@ -270,7 +252,6 @@
       ],
       "answer": "Injection"
     },
-
     {
       "question": "Slides - Which one of the following best describes Concolic Execution?\n",
       "options": [
@@ -282,7 +263,6 @@
       ],
       "answer": "Static analysis followed by dynamic analysis"
     },
-
     {
       "question": "Slides - What is the privacy paradox?\n",
       "options": [
@@ -294,7 +274,6 @@
       ],
       "answer": "None of the above"
     },
-
     {
       "question": "Slides - A/An _________ is the likelihood that a loss will occur.",
       "options": [
@@ -306,7 +285,6 @@
       ],
       "answer": "risk"
     },
-
     {
       "question": "Slides - Which of the following statements about Cyber Security Risks Management is TRUE?",
       "options": [
@@ -318,7 +296,6 @@
       ],
       "answer": "Exploited vulnerabilities result in losses."
     },
-
     {
       "question": "Slides - When should you perform a risk assessment?",
       "options": [
@@ -330,7 +307,6 @@
       ],
       "answer": "periodically"
     },
-
     {
       "question": "Slides - Why should the people on the RA team be different from the people responsible for correcting deficiencies?",
       "options": [
@@ -353,7 +329,6 @@
       ],
       "answer": "X only"
     },
-
     {
       "question": "2021 - Q8 - What is the traffic generated in response to DoS attacks using source address spoofing called? ",
       "options": [
@@ -365,7 +340,6 @@
       ],
       "answer": "Backscatter"
     },
-
     {
       "question": "2021 - Q10 - Which of the following statement(s) about Slowloris is/are TRUE?\nX: It establishes multiple connections to a Web server.\n\nY: Each connection sends a request devoid of the terminating newline sequence.\n\nZ: The attacker sends additional header lines periodically to keep the connection alive.",
       "options": [
@@ -377,9 +351,8 @@
       ],
       "answer": "All of X, Y, and Z"
     },
-
     {
-      "question": "2021 - Q12 - Consider the classic DoS attack using ICMP echo request packets. The size of each of these packets is 500 bytes ignoring framing overhead. The attacker has compromised several residential network computers around the world. Each compromised computer has an average upstream capacity of 128 kilobits per second. The attacker’s target is using a 10 megabits per second link. Approximately how many compromised computers does the attacker need to flood the target?",
+      "question": "2021 - Q12 - Consider the classic DoS attack using ICMP echo request packets. The size of each of these packets is 500 bytes ignoring framing overhead. The attacker has compromised several residential network computers around the world. Each compromised computer has an average upstream capacity of 128 kilobits per second. The attacker's target is using a 10 megabits per second link. Approximately how many compromised computers does the attacker need to flood the target?",
       "options": [
         "30",
         "20",
@@ -389,7 +362,6 @@
       ],
       "answer": "80"
     },
-
     {
       "question": "2021 - Q13 - One line of defence against DoS attacks is network ingress filtering. Since filtering needs to be done as close to the source as possible by routers or gateways knowing the valid address ranges of incoming packets, which entity is best placed to ensure that valid source addresses are used in all packets from the source hosts?",
       "options": [
@@ -401,7 +373,6 @@
       ],
       "answer": "Internet Service Provider"
     },
-
     {
       "question": "2021 - Q14 - What is the typical order of steps used by intruders when attacking a system?",
       "options": [
@@ -413,7 +384,6 @@
       ],
       "answer": "Target acquisition, initial access, privilege escalation, system exploit, maintain access, covering tracks"
     },
-
     {
       "question": "2021 - Q15 - Assume that only 1% of the network traffic are real attacks. Assume that the detection rate of an IDS is 87%. What is the approximate probability that a connection is incorrectly labelled an attack?",
       "options": [
@@ -425,7 +395,6 @@
       ],
       "answer": "94%"
     },
-
     {
       "question": "2021 - Q16 - Which of the following statement(s) about anomaly detection is/are TRUE?:\nX: Statistical approaches are simple to implement and have low computational cost.\n\nY: Knowledge-based approaches classify the observed behaviour using a set of rules.\n\nZ: Anomaly detection has low rates of false alarms.",
       "options": [
@@ -437,7 +406,6 @@
       ],
       "answer": "X and Y only"
     },
-
     {
       "question": "2021 - Q17 - Which of the following statement about signature or heuristic detection is FALSE?",
       "options": [
@@ -449,7 +417,6 @@
       ],
       "answer": "Signature approaches can detect zero-day attacks."
     },
-
     {
       "question": "2021 - Q18 - Which of the following statement(s) about NIDS sensors is/are TRUE?\nX: Inline sensors can be achieved by combining the NIDS sensor logic with another\nnetwork device.\n\nY: A stand-alone inline NIDS sensor can block an attack when one is detected.\n\nZ: An inline sensor is more efficient than the passive sensor from the point of view of traffic flow.",
       "options": [
@@ -461,9 +428,8 @@
       ],
       "answer": "X and Z only"
     },
-
     {
-      "question": "2021 - Q20 - Which of the following statement(s) about honeypots is/are TRUE?\nX: A high interaction honeypot is a realistic target that may occupy an attacker for an\nextended period.\n\nY: A honeypot outside the external firewall has the full ability to trap attacks emerging from within that network.\n\nZ: A honeypot can be instrumented with monitors to collect information about potential attackers.",
+      "question": "2021 - Q20 - Which of the following statement(s) about honeypots is/are TRUE?\nX: A high interaction honeypot is a realistic target that may occupy an attacker for an extended period.\n\nY: A honeypot outside the external firewall has the full ability to trap attacks emerging from within that network.\n\nZ: A honeypot can be instrumented with monitors to collect information about potential attackers.",
       "options": [
         "Z only",
         "Y only",
@@ -473,7 +439,6 @@
       ],
       "answer": "X and Z only"
     },
-
     {
       "question": "2021 - Q23 - Nefarious_G mainly uses existing scripting toolkits for launching an attack. Nefarious_G has enough skills to download the toolkits, but may not have the expertise to modify or extend the toolkits. Nefarious_G belongs to which class of intruders?",
       "options": [
@@ -485,7 +450,6 @@
       ],
       "answer": "Apprentice"
     },
-
     {
       "question": "2021 - Q26 - Alice is deploying a Network Intrusion Prevention System (NIPS) in an enterprise network. This NIPS scans for attack signatures in the context of a traffic stream. This NIPS does not inspect individual packets. What is this method called?",
       "options": [
@@ -497,7 +461,6 @@
       ],
       "answer": "Stateful matching"
     },
-
     {
       "question": "2021 - Q28 - Which of the following statement(s) about Snort is/are TRUE?\nX: Snort Inline functions as an intrusion prevention system.\n\nY: Snort Inline adds new rules like drop, reject, and sdrop.\n\nZ: Snort Inline replace option is useful for honeypot implementation.",
       "options": [
@@ -509,7 +472,6 @@
       ],
       "answer": "All of X, Y, and Z"
     },
-
     {
       "question": "2021 - Q29 - Which type of firewall sets up two TCP connections, one between itself and a host running TCP in an internal network and a TCP host outside the network?",
       "options": [
@@ -521,7 +483,6 @@
       ],
       "answer": "Circuit-level gateway"
     },
-
     {
       "question": "2021 - Q33 - Let's assume you are a cybersecurity consultant working for a privacy related project in the government sector. Which one of the following techniques is NOT an appropriate solution for preserving privacy?",
       "options": [
@@ -533,7 +494,6 @@
       ],
       "answer": "Implement privacy-focused search engine"
     },
-
     {
       "question": "2021 - Q34 - Which one of the following statements about Trojans is FALSE?",
       "options": [
@@ -545,9 +505,8 @@
       ],
       "answer": "Trojan works behind the system and steals sensitive data while self-replicating"
     },
-
     {
-      "question": "2021 - Q36 - Bob received an email greeting “Dear account holder” and it claimed that his personal email account’s details have been compromised and he needs to click a link to reset the password. However, he finds the email contains misspelled words. What type of attack is he being presented with?",
+      "question": "2021 - Q36 - Bob received an email greeting \"Dear account holder\" and it claimed that his personal email account's details have been compromised and he needs to click a link to reset the password. However, he finds the email contains misspelled words. What type of attack is he being presented with?",
       "options": [
         "Spam",
         "All of the given options",
@@ -557,7 +516,6 @@
       ],
       "answer": "Phishing only"
     },
-
     {
       "question": "2021 - Q37 - Tom receives notices from his bank that he has unauthorised charges on his credit card account. What type of attack is Tom a victim of?",
       "options": [
@@ -569,7 +527,6 @@
       ],
       "answer": "Identity theft"
     },
-
     {
       "question": "2021 - Q38 - Which of the following statements about blind SQL injection attacks is TRUE?",
       "options": [
@@ -581,19 +538,17 @@
       ],
       "answer": "Must be a relational database, and error messages are not available\n"
     },
-
     {
       "question": "2021 - Q40 - Which one of the following statements is TRUE about Mix Networks?",
       "options": [
         "A mix receives messages from one sender only",
-        "A mix doesn’t require a lot of traffic",
+        "A mix doesn't require a lot of traffic",
         "Messages are randomly shuffled and sent in a different order",
         "A mix can not delete real traffic data",
         "Messages can not be artificially delayed to resist timing attacks"
       ],
       "answer": "Messages are randomly shuffled and sent in a different order"
     },
-
     {
       "question": "2021 - Q41 - Which of the following statement is TRUE about blockchain technology?",
       "options": [
@@ -605,7 +560,6 @@
       ],
       "answer": "A blockchain is a decentralised, distributed, digital ledger consisting of records called blocks\n"
     },
-
     {
       "question": "2021 - Q42 - Which one of the following statements about the future of the blockchain application is TRUE?",
       "options": [
@@ -617,7 +571,6 @@
       ],
       "answer": "Cryptocurrency transactions, a transaction between governments, companies and consumers, voting, healthcare and many other applications"
     },
-
     {
       "question": "2021 - Q43 - Let's assume you have been appointed as a cyber security consultant to a major project in New Zealand government. You have been tasked to lead a team of software developers to securely design a password management system for military use. Which of the following of using SCrypt.generate () you would typically advise the team to adhere to?",
       "options": [
@@ -629,7 +582,6 @@
       ],
       "answer": "All of the given options"
     },
-
     {
       "question": "2021 - Q44 - Which of the following statements is TRUE regarding aligning risks?",
       "options": [
@@ -641,7 +593,6 @@
       ],
       "answer": "Conveying IT risks in terms of business risks and translating business goals into IT goals can be challenging"
     },
-
     {
       "question": "2021 - Q45 - A consistent approach for IT risk management, effective management of IT risks, continuous evaluation of current IT risks and threats to the organisation, and a broadened IT risk management approach are all considered __________ of the IT Risk Management Framework.",
       "options": [
@@ -653,7 +604,6 @@
       ],
       "answer": "Value drivers"
     },
-
     {
       "question": "2021 - Q46 - Identifying the opportunities or threats that are present, understanding the significance of each of them, recognising what action to take to handle both of them, and monitoring all of the above, are all elements of:",
       "options": [
@@ -665,7 +615,6 @@
       ],
       "answer": "Risk management"
     },
-
     {
       "question": "2021 - Q47 - Which one of the following statements is FALSE about designing security systems that people can use?\n",
       "options": [
@@ -677,7 +626,6 @@
       ],
       "answer": "Designing usable security systems does not typically involve behavioural economics\n"
     },
-
     {
       "question": "2021 - Q48 - Which one of the following statements is TRUE about implementing access control mechanisms?",
       "options": [
@@ -689,7 +637,6 @@
       ],
       "answer": "Implementing access control policies depends on reliable input"
     },
-
     {
       "question": "2021 - Q49 - Which one of the following attack techniques is used to exploit websites by altering backend database queries through inputting manipulated queries?",
       "options": [
@@ -701,7 +648,6 @@
       ],
       "answer": "SQL Injection"
     },
-
     {
       "question": "2021 - Q50 - Let's assume an application takes user-input data and sends it to a web browser without proper validation and escaping. What is this vulnerability called?",
       "options": [
@@ -713,7 +659,6 @@
       ],
       "answer": "Input Output validation error\n"
     },
-
     {
       "question": "Slides - Alice sends a message to Bob. Bob wants to ensure that the message\nhas come from Alice, and not Eve. Which of the following goals need to\nbe achieved?",
       "options": [
@@ -725,9 +670,8 @@
       ],
       "answer": "Authentication"
     },
-
     {
-      "question": "Slides - Traffic analysis is difficult in Chaum’s Mix due to which of the following\nreasons?",
+      "question": "Slides - Traffic analysis is difficult in Chaum's Mix due to which of the following\nreasons?",
       "options": [
         "Fixed-size messages",
         "Message reordering in each mix",
@@ -737,31 +681,28 @@
       ],
       "answer": "All of the above"
     },
-
     {
       "question": "Slides - Which of the following is not contained in a block?",
       "options": [
         "Cryptographic nonce",
-        "Hash of the previous block’s header",
-        "Hash of the previous block’s data",
+        "Hash of the previous block's header",
+        "Hash of the previous block's data",
         "Timestamp",
         "Digitally signed transactions"
       ],
-      "answer": "Hash of the previous block’s data"
+      "answer": "Hash of the previous block's data"
     },
-
     {
       "question": "Slides - Which of the following is NOT true about Blockchains?",
       "options": [
         "Transactions in a blockchain network are digitally signed",
-        "Transactions in a blockchain network are encrypted with receiver’s public key",
+        "Transactions in a blockchain network are encrypted with receiver's public key",
         "Blockchain is immune to single-point failure",
         "Transactions in a blockchain network can be validated by any node",
         "Transactions in a blockchain network can only be published by a miner"
       ],
-      "answer": "Transactions in a blockchain network are encrypted with receiver’s public key"
+      "answer": "Transactions in a blockchain network are encrypted with receiver's public key"
     },
-
     {
       "question": "Which of the following is NOT true about IoT devices?",
       "options": [
